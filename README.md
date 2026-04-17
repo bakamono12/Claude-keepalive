@@ -1,4 +1,4 @@
-# Claude-Keepalive
+# Claude Keepalive
 
 Fires a headless `claude --print "."` on a schedule so a Claude Pro 5-hour
 usage window is always warm during your workday.
