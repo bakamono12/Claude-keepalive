@@ -1,0 +1,13 @@
+[Unit]
+Description=Claude Code keepalive ping (starts/refreshes 5h usage window)
+Documentation=https://docs.claude.com/en/docs/claude-code
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/claude-keepalive.sh
+# Inherit user PATH so `claude` (usually in ~/.nvm/... or ~/.local/bin) resolves.
+Environment=PATH=%h/.local/bin:%h/.npm-global/bin:%h/.nvm/versions/node/current/bin:/usr/local/bin:/usr/bin:/bin
+# Don't let a stuck ping linger.
+TimeoutStartSec=90s
