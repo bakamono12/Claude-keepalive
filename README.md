@@ -5,6 +5,7 @@ usage window is always warm during your workday.
 
 ## Schedule (Asia/Kolkata, Mon–Fri)
 ### You can customize this based on your work timings
+### Note: This will work if your laptop is on/suspended not shut down.
 
 | Fire time | Window covers       | Why                                         |
 |-----------|--------------------|---------------------------------------------|
